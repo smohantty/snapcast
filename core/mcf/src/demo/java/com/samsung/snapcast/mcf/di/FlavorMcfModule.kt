@@ -10,7 +10,7 @@ import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)
-interface FlavorMcfModule {
+internal interface FlavorMcfModule {
 
     @Binds
     fun bindFakeMcfDataSource(dataSource: FakeMcfDataSource): McfDataSource

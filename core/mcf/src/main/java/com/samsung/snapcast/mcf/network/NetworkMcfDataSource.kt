@@ -6,7 +6,7 @@ import javax.inject.Inject
 /**
  * [McfDataSource] implementation that provides fake mcf service
  */
-class NetworkMcfDataSource @Inject constructor(
+internal class NetworkMcfDataSource @Inject constructor(
 ) : McfDataSource {
     override fun test():String {
         return "RealData"
