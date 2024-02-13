@@ -1,0 +1,37 @@
+<variant
+    name="prodRelease"
+    package="com.samsung.snapcast.mcf"
+    minSdkVersion="26"
+    targetSdkVersion="34"
+    mergedManifest="build/intermediates/merged_manifest/prodRelease/AndroidManifest.xml"
+    manifestMergeReport="build/outputs/logs/manifest-merger-prod-release-report.txt"
+    proguardFiles="build/intermediates/default_proguard_files/global/proguard-android.txt-8.2.2"
+    partialResultsDir="build/intermediates/lint_partial_results/prodRelease/out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml:src/prod/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/prod/java:src/release/java:src/prodRelease/java:src/main/kotlin:src/prod/kotlin:src/release/kotlin:src/prodRelease/kotlin"
+        resDirectories="src/main/res:src/prod/res:src/release/res:src/prodRelease/res"
+        assetsDirectories="src/main/assets:src/prod/assets:src/release/assets:src/prodRelease/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+    <sourceProvider
+        manifests="src/test/AndroidManifest.xml"
+        javaDirectories="src/test/java:src/testProd/java:src/testRelease/java:src/testProdRelease/java:src/test/kotlin:src/testProd/kotlin:src/testRelease/kotlin:src/testProdRelease/kotlin"
+        assetsDirectories="src/test/assets:src/testProd/assets:src/testRelease/assets:src/testProdRelease/assets"
+        unitTest="true"/>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="build/intermediates/javac/prodRelease/classes:build/tmp/kotlin-classes/prodRelease:build/tmp/kapt3/classes/prodRelease:build/intermediates/compile_r_class_jar/prodRelease/R.jar"
+      type="MAIN"
+      applicationId="com.samsung.snapcast.mcf"
+      generatedSourceFolders="build/generated/source/kapt/prodRelease:build/generated/ap_generated_sources/prodRelease/out"
+      desugaredMethodsFiles="/home/suv/.gradle/caches/transforms-3/c924001f9070e076e0848fb6a892af2d/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+  <testArtifact>
+  </testArtifact>
+</variant>

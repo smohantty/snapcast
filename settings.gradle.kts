@@ -18,4 +18,5 @@ dependencyResolutionManagement {
 rootProject.name = "snapcast"
 include(":app")
 include(":core:designsystem")
+include(":core:mcf")
 

@@ -37,6 +37,7 @@ android {
 dependencies {
 
     implementation(project(":core:designsystem"))
+    implementation(project(":core:mcf"))
 
 
     implementation(libs.core.ktx)
