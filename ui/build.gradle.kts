@@ -13,7 +13,7 @@ android {
 dependencies {
 
     implementation(libs.core.ktx)
-    implementation(project(":designsystem"))
+    implementation(project(":core:designsystem"))
     implementation(project(":domain"))
     api(libs.bundles.compose)
     implementation(libs.coil.kt)
