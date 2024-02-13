@@ -17,7 +17,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "snapcast"
 include(":app")
-include(":data")
-include(":domain")
 include(":core:designsystem")
 
