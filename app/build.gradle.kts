@@ -1,6 +1,3 @@
-import com.samsung.snapcast.FlavorDimension
-import com.samsung.snapcast.SnapcastFlavor
-
 plugins {
     id("snapcast.android.application")
     id("snapcast.android.application.compose")
@@ -26,6 +23,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     packaging {
@@ -33,6 +31,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
 }
 
 dependencies {
@@ -48,11 +47,6 @@ dependencies {
     implementation(libs.bundles.compose)
     implementation(libs.compose.navigation)
     implementation(libs.androidx.hilt.navigation.compose)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.junit.ext)
-    androidTestImplementation(libs.espresso)
-    androidTestImplementation(platform(libs.compose.bom))
-    androidTestImplementation(libs.compose.ui.testing)
     debugImplementation(libs.compose.ui.tooling)
     debugImplementation(libs.compose.ui.test.manifest)
 }
