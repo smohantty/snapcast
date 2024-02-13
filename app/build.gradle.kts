@@ -5,6 +5,7 @@ plugins {
     id("snapcast.android.application")
     id("snapcast.android.application.compose")
     id("snapcast.android.hilt")
+    id("snapcast.android.application.flavors")
 }
 
 android {
@@ -13,18 +14,8 @@ android {
         applicationId = "com.samsung.snapcast"
         versionCode = libs.versions.versionCode.get().toInt()
         versionName = libs.versions.versionName.get()
-        missingDimensionStrategy(FlavorDimension.contentType.name, SnapcastFlavor.demo.name)
     }
 
-    flavorDimensions += "poc"
-    productFlavors {
-        create("demo") {
-            dimension = "poc"
-        }
-        create("prod") {
-        }
-    }
-    
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
