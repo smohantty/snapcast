@@ -19,9 +19,5 @@ rootProject.name = "snapcast"
 include(":app")
 include(":data")
 include(":domain")
-include(":core")
 include(":core:designsystem")
-include(":feature:home")
-include(":feature:about")
-include(":feature:collection")
-include(":ui")
+

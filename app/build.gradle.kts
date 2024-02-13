@@ -37,11 +37,7 @@ android {
 
 dependencies {
 
-    implementation(project(":feature:home"))
-    implementation(project(":feature:about"))
-    implementation(project(":feature:collection"))
     implementation(project(":core:designsystem"))
-    implementation(project(":ui"))
     implementation(project(":data"))
 
 
